@@ -13,16 +13,15 @@ class Triangle
      begin
     raise TriangleError
     puts error.message
-  end
   
-  elsif s1 == s2 && s1 == s3
-  self.kind = :equilateral
+    elsif s1 == s2 && s1 == s3
+      self.kind = :equilateral
   
-  elsif s1 == s2 || s1 == s3 || s2 == s3
-  self.kind = :isosceles
+    elsif s1 == s2 || s1 == s3 || s2 == s3
+      self.kind = :isosceles
   
- else 
-   self.kind = :scalene
+    else 
+      self.kind = :scalene
   
     end   
   end
