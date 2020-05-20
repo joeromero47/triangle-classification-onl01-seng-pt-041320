@@ -1,5 +1,5 @@
 class Triangle
-  
+  extend Triangle::TriangleError
   attr_accessor :s1, :s2, :s3, :kind
   
   def initialize(s1, s2, s3)
