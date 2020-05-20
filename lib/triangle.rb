@@ -1,5 +1,4 @@
 class Triangle
-  extend TriangleError
   attr_accessor :s1, :s2, :s3, :kind
   
   def initialize(s1, s2, s3)
@@ -24,12 +23,11 @@ class Triangle
       self.kind = :scalene
     end   
   end
-end 
     
-
 
   class TriangleError < StandardError
     def message
       "illegal"
     end 
 end
+end 
